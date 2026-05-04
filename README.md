@@ -1,73 +1,206 @@
-# Welcome to your Lovable project
+# GizmoKe Inventory & Sales Management System
 
-## Project info
+## 📌 Overview
 
-**URL**: https://lovable.dev/projects/8850793c-95a2-4c79-a132-625987c614cf
+GizmoKe is a cloud-based Inventory and Sales Management System designed to streamline operations for small and medium-sized retail businesses dealing in gadget accessories. The system automates inventory tracking, sales processing, reporting, and user management, providing real-time insights and improving operational efficiency.
 
-## How can I edit this code?
+---
 
-There are several ways of editing your application.
+## 🎯 Objectives
 
-**Use Lovable**
+* Automate inventory and sales processes
+* Provide real-time stock tracking
+* Generate accurate sales and revenue reports
+* Support role-based user access control
+* Enable data-driven decision-making
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/8850793c-95a2-4c79-a132-625987c614cf) and start prompting.
+---
 
-Changes made via Lovable will be committed automatically to this repo.
+## 🚀 Features
 
-**Use your preferred IDE**
+### 1. Inventory Management
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
+* Add, update, and delete products
+* Categorize products (e.g., chargers, audio devices)
+* Track stock levels in real time
+* Low-stock alerts
 
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
+### 2. Sales Management
 
-Follow these steps:
+* Record sales transactions
+* Automatically update inventory after each sale
+* Generate receipts and transaction history
 
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
+### 3. Reporting & Analytics
 
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
+* Daily, weekly, and monthly sales reports
+* Revenue trend analysis
+* Exportable reports
 
-# Step 3: Install the necessary dependencies.
-npm i
+### 4. User Management
 
-# Step 4: Start the development server with auto-reloading and an instant preview.
+* Role-based access (Admin, Staff)
+* Secure authentication
+* Profile management
+
+### 5. Notifications
+
+* Low stock alerts
+* System notifications
+
+### 6. Settings Management
+
+* Configure business details (name, contact, currency)
+* Set tax rates and receipt preferences
+
+---
+
+## 🏗️ System Architecture
+
+```bash
+Frontend (Web Application)
+        ↓
+Supabase API (Backend as a Service)
+        ↓
+PostgreSQL Database (Cloud Storage)
+```
+
+---
+
+## 🛠️ Technologies Used
+
+* **Frontend:** JavaScript / HTML / CSS
+* **Backend:** Supabase (Backend-as-a-Service)
+* **Database:** PostgreSQL (via Supabase)
+* **Version Control:** GitHub
+
+---
+
+## ⚙️ Installation & Setup
+
+### 1. Clone the Repository
+
+```bash
+git clone https://github.com/your-username/gizmoke.git
+cd gizmoke
+```
+
+### 2. Install Dependencies
+
+```bash
+npm install
+```
+
+### 3. Configure Environment Variables
+
+Create a `.env.local` file in the root directory:
+
+```env
+VITE_SUPABASE_URL=your_supabase_url
+VITE_SUPABASE_ANON_KEY=your_supabase_anon_key
+```
+
+### 4. Run the Application
+
+```bash
 npm run dev
 ```
 
-**Edit a file directly in GitHub**
+---
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
+## 🗄️ Database Structure
 
-**Use GitHub Codespaces**
+The system uses the following core tables:
 
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
+* products
+* categories
+* sales
+* sales_items
+* profiles
+* user_roles
+* suppliers
+* notifications
+* settings
 
-## What technologies are used for this project?
+---
 
-This project is built with:
+## 🔐 Security Features
 
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
+* Row Level Security (RLS) enabled in Supabase
+* Role-based access control
+* Secure authentication and authorization
 
-## How can I deploy this project?
+---
 
-Simply open [Lovable](https://lovable.dev/projects/8850793c-95a2-4c79-a132-625987c614cf) and click on Share -> Publish.
+## 📊 Key Functionalities
 
-## Can I connect a custom domain to my Lovable project?
+* Real-time data synchronization
+* Automated revenue calculations
+* Transaction tracking and audit trails
+* Cloud-based access and storage
 
-Yes, you can!
+---
 
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
+## 🧾 Tax & Compliance Support
 
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/features/custom-domain#custom-domain)
+GizmoKe supports tax compliance by:
+
+* Recording all transactions digitally
+* Enabling VAT calculations
+* Supporting integration with payment providers
+* Providing structured data for systems like eTIMS
+
+---
+
+## 📈 Future Enhancements
+
+* Integration with payment gateways (e.g., Paystack)
+* eTIMS API integration for automated tax submission
+* Mobile application version
+* Advanced analytics dashboard
+* Multi-branch support
+
+---
+
+## 🧪 Testing
+
+The system has been tested for:
+
+* Functional correctness
+* Database integrity
+* User interface responsiveness
+* Performance under normal usage conditions
+
+---
+
+## 📚 Documentation
+
+Detailed system documentation includes:
+
+* System Requirements Specification
+* Design and Architecture
+* Test Plan and Results
+* User Manual
+
+---
+
+## 👨‍💻 Author
+
+**Wayne Munge**
+Software Development 
+
+---
+
+## 📄 License
+
+This project is developed for commercial use with proper licensing.
+
+---
+
+## ⭐ Acknowledgements
+
+* Supabase for backend services
+* GitHub for version control
+
+
+---
